@@ -1,0 +1,52 @@
+.item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: normal;
+  animation: fade-in 0.8s;
+}
+
+.done {
+  opacity: 0.3;
+  animation: fade-out 0.8s;
+}
+
+.deleteButton {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: mediumvioletred;
+  margin: 0.5rem;
+}
+
+.title {
+  margin: 0.5rem;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
